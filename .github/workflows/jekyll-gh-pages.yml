@@ -40,7 +40,7 @@ jobs:
         with:
           # Double check your 'dist' path. 
           # It is usually: dist/<project-name>/browser
-          path: ./dist/BPR2026/browser
+          path: ./dist/BPR/browser
 
   deploy:
     environment:
