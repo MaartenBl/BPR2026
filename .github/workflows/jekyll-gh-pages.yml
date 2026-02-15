@@ -33,7 +33,7 @@ jobs:
       - name: Build Angular
         # Replace <repo-name> with your repository name (e.g., /my-app/)
         # Newer Angular versions build to dist/<project-name>/browser
-        run: npx ng build --configuration production --base-href /<repo-name>/
+        run: npx ng build --configuration production --base-href /BPR2026/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
