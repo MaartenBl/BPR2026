@@ -1,0 +1,16 @@
+.container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+.component-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Component Showcase</h1>
+  <div class="component-list">
+    @for (comp of components; track comp.id) {
+      <div class="card" [routerLink]="['/' + comp.path]">
+        <h2>{{ comp.name }}</h2>
+        <p>{{ comp.description }}</p>
+      </div>
+    }
+  </div>
+</div>
