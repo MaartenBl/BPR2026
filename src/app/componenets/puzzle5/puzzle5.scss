@@ -1,0 +1,19 @@
+.puzzle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+
+  input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+}

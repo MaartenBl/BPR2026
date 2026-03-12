@@ -8,12 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./puzzle1.scss'],
 })
 export class Puzzle1 {
-  rebus1 = 'assets/rebus1.png';
+  rebus1a = 'assets/rebus1a.png';
+  rebus1b = 'assets/rebus1b.png';
   locked = true;
 
   handleImageError() {
     console.error('Failed to load rebus image');
-    this.rebus1 = 'assets/placeholder.png'; // Fallback image
+    this.rebus1a = 'assets/placeholder.png';
+    this.rebus1b = 'assets/placeholder.png';
   }
 
   unlock(value: string) {

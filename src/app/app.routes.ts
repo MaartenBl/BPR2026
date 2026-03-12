@@ -10,6 +10,21 @@ import { Puzzle7 } from './componenets/puzzle7/puzzle7';
 import { Puzzle8 } from './componenets/puzzle8/puzzle8';
 import { Puzzle9 } from './componenets/puzzle9/puzzle9';
 import { Puzzle10 } from './componenets/puzzle10/puzzle10';
+import { Puzzle11 } from './componenets/puzzle11/puzzle11';
+import { Puzzle12 } from './componenets/puzzle12/puzzle12';
+import { Puzzle13 } from './componenets/puzzle13/puzzle13';
+import { Puzzle14 } from './componenets/puzzle14/puzzle14';
+import { Puzzle15 } from './componenets/puzzle15/puzzle15';
+import { Puzzle16 } from './componenets/puzzle16/puzzle16';
+import { Puzzle17 } from './componenets/puzzle17/puzzle17';
+import { Puzzle18 } from './componenets/puzzle18/puzzle18';
+import { Puzzle19 } from './componenets/puzzle19/puzzle19';
+import { Puzzle20 } from './componenets/puzzle20/puzzle20';
+import { Puzzle21 } from './componenets/puzzle21/puzzle21';
+import { Puzzle22 } from './componenets/puzzle22/puzzle22';
+import { Puzzle23 } from './componenets/puzzle23/puzzle23';
+import { Puzzle24 } from './componenets/puzzle24/puzzle24';
+import { Puzzle25 } from './componenets/puzzle25/puzzle25';
 
 export const routes: Routes = [
   { path: '', component: Landing },
@@ -23,4 +38,19 @@ export const routes: Routes = [
   { path: 'puzzle8', component: Puzzle8 },
   { path: 'puzzle9', component: Puzzle9 },
   { path: 'puzzle10', component: Puzzle10 },
+  { path: 'puzzle11', component: Puzzle11 },
+  { path: 'puzzle12', component: Puzzle12 },
+  { path: 'puzzle13', component: Puzzle13 },
+  { path: 'puzzle14', component: Puzzle14 },
+  { path: 'puzzle15', component: Puzzle15 },
+  { path: 'puzzle16', component: Puzzle16 },
+  { path: 'puzzle17', component: Puzzle17 },
+  { path: 'puzzle18', component: Puzzle18 },
+  { path: 'puzzle19', component: Puzzle19 },
+  { path: 'puzzle20', component: Puzzle20 },
+  { path: 'puzzle21', component: Puzzle21 },
+  { path: 'puzzle22', component: Puzzle22 },
+  { path: 'puzzle23', component: Puzzle23 },
+  { path: 'puzzle24', component: Puzzle24 },
+  { path: 'puzzle25', component: Puzzle25 },
 ];
