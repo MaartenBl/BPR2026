@@ -25,6 +25,7 @@ import { Puzzle22 } from './componenets/puzzle22/puzzle22';
 import { Puzzle23 } from './componenets/puzzle23/puzzle23';
 import { Puzzle24 } from './componenets/puzzle24/puzzle24';
 import { Puzzle25 } from './componenets/puzzle25/puzzle25';
+import { Puzzle26 } from './componenets/puzzle26/puzzle26';
 
 export const routes: Routes = [
   { path: '', component: Landing },
@@ -53,4 +54,5 @@ export const routes: Routes = [
   { path: 'puzzle23', component: Puzzle23 },
   { path: 'puzzle24', component: Puzzle24 },
   { path: 'puzzle25', component: Puzzle25 },
+  { path: 'puzzle26', component: Puzzle26 },
 ];
