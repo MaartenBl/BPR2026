@@ -2,19 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
 
   img {
-    max-width: 582px;
-    max-height: 582px;
+    max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
   }
 
   button {
     margin-top: 1rem;
+    padding: 12px 24px;
+    font-size: 1rem;
   }
 
   input {
+    width: 100%;
+    max-width: 320px;
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 12px;
+    font-size: 16px; // Prevents iOS automatic zoom on focus
+    box-sizing: border-box;
   }
 }

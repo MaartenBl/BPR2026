@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./puzzle15.scss'],
 })
 export class Puzzle15 {
-  rebus15 = 'assets/rebus15.png';
+  rebus15 = 'assets/rebus15b.png';
   locked = true;
 
   handleImageError() {
