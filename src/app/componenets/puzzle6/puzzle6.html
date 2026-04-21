@@ -1,5 +1,19 @@
-<div class="puzzle-container">
-  <h2>Rebus 6</h2>
-  <h3>Latin - 6 Letters</h3>
-  <img [src]="rebus6" alt="Rebus Puzzle 6" class="puzzle-image" />
-</div>
+@if (locked) {
+  <div class="puzzle-container">
+    <h2>Restricted Access</h2>
+    <p>Please enter the access code to view this puzzle.</p>
+    <input
+      #codeInput
+      type="text"
+      placeholder="Access Code"
+      (keyup.enter)="unlock(codeInput.value)"
+    />
+    <button (click)="unlock(codeInput.value)">Enter</button>
+  </div>
+} @else {
+  <div class="puzzle-container">
+    <h2>Rebus 6</h2>
+    <h3>Latin - 6 Letters</h3>
+    <img [src]="rebus6" alt="Rebus Puzzle 6" class="puzzle-image" />
+  </div>
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PASSPHRASES } from '../../passphrases';
 
 @Component({
   selector: 'app-puzzle10',
@@ -17,7 +18,7 @@ export class Puzzle10 {
   }
 
   unlock(value: string) {
-    if (value) {
+    if (value?.trim().toUpperCase() === PASSPHRASES[9]) {
       this.locked = false;
     }
   }

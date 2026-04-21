@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PASSPHRASES } from '../../passphrases';
 
 @Component({
   selector: 'app-puzzle1',
@@ -10,17 +11,15 @@ import { CommonModule } from '@angular/common';
 })
 export class Puzzle1 {
   rebus1a = 'assets/rebus1a.png';
-  rebus1b = 'assets/rebus1b.png';
   locked = true;
 
   handleImageError() {
     console.error('Failed to load rebus image');
     this.rebus1a = 'assets/placeholder.png';
-    this.rebus1b = 'assets/placeholder.png';
   }
 
   unlock(value: string) {
-    if (value) {
+    if (value?.trim().toUpperCase() === PASSPHRASES[0]) {
       this.locked = false;
     }
   }
