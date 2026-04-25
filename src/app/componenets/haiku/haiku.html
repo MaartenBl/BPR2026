@@ -1,0 +1,55 @@
+@if (locked) {
+  <div class="puzzle-container">
+    <h2>Restricted Access</h2>
+    <p>Please enter the access code to view this puzzle.</p>
+    <input
+      #codeInput
+      type="text"
+      placeholder="Access Code"
+      (keyup.enter)="unlock(codeInput.value)"
+    />
+    <button (click)="unlock(codeInput.value)">Enter</button>
+  </div>
+} @else {
+  <div class="puzzle-container">
+    <h2>Haiku Challenge</h2>
+    <p class="intro">No rebus? That's right. This is a challenge to create your own haiku.</p>
+
+    <div class="info-section">
+      <h3>The 5-7-5 Structure</h3>
+      <p>A traditional English haiku is composed of three lines with a specific syllable count:</p>
+      <ul class="structure-list">
+        <li><strong>Line 1:</strong> 5 syllables</li>
+        <li><strong>Line 2:</strong> 7 syllables</li>
+        <li><strong>Line 3:</strong> 5 syllables</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h3>Key Elements</h3>
+      <ul class="elements-list">
+        <li>
+          <strong>The "Cutting Word" (Kireji):</strong> In Japanese, this is a grammatical marker
+          that creates a pause or a shift in the poem. In English, we usually achieve this with a
+          comma, dash, or a simple break in thought between lines.
+        </li>
+        <li>
+          <strong>The "Seasonal Reference" (Kigo):</strong> Most haikus include a word that hints at
+          the time of year (e.g., "blossoms" for spring or "frost" for winter).
+        </li>
+        <li>
+          <strong>Simplicity:</strong> Avoid flowery adjectives. Focus on a single, vivid image.
+        </li>
+      </ul>
+    </div>
+
+    <div class="example-box">
+      <h3>Example: The Honey Bee</h3>
+      <p class="haiku-poem">
+        Golden wings in flight, (5)<br />
+        Dancing through the summer heat, (7)<br />
+        Dusty legs with gold. (5)
+      </p>
+    </div>
+  </div>
+}

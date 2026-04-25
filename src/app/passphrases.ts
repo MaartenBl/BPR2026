@@ -24,4 +24,5 @@ export const PASSPHRASES: string[] = [
   'MACINTOSH', // Puzzle 23
   'HANKINSON', // Puzzle 24
   'BLAAK', // Puzzle 25
+  'WILLEM',
 ];

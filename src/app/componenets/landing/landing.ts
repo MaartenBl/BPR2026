@@ -35,5 +35,6 @@ export class Landing {
     { id: 24, name: 'Rebus 24', description: 'NL - 3', path: 'puzzle24' },
     { id: 25, name: 'Rebus 25', description: 'EN - 6', path: 'puzzle25' },
     { id: 26, name: 'Rebus 26', description: 'Secret rebus 🤫', path: 'puzzle26' },
+    { id: 27, name: 'Haiku', description: 'Secret rebus 🤫', path: 'haiku' },
   ];
 }
