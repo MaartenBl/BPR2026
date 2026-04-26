@@ -16,7 +16,7 @@ export const PASSPHRASES: string[] = [
   'BOS', // Puzzle 15
   'GRIFFIOEN', // Puzzle 16
   'PRINS', // Puzzle 17
-  'ROUKEEMA', // Puzzle 18
+  'ROUKEMA', // Puzzle 18
   'KRANENBURG', // Puzzle 19
   'VAN KAMPEN', // Puzzle 20
   'PANNEMAN', // Puzzle 21
