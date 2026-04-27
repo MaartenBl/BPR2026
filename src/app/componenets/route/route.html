@@ -1,0 +1,37 @@
+@if (locked) {
+  <div class="puzzle-container">
+    <h2>Restricted Access</h2>
+    <p>Please enter the access code to view this puzzle.</p>
+    <input
+      #codeInput
+      type="text"
+      placeholder="Access Code"
+      (keyup.enter)="unlock(codeInput.value)"
+    />
+    <button (click)="unlock(codeInput.value)">Enter</button>
+  </div>
+} @else {
+  <div class="puzzle-container">
+    <h2>Route to finish</h2>
+    <p class="intro">Well done! You're almost at the end 🏁</p>
+
+    <div class="info-section">
+      <h3>Route Beschrijving:</h3>
+      <ol class="structure-list">
+        <li>Volg dit pad tot de T-kruising en sla rechts af.</li>
+        <li>Volg het pad tot de “kissing gate” van de camping</li>
+        <li>Ga door het hek</li>
+        <li>Direct linksaf over de bestrate weg</li>
+        <li>Volg dit pad tot het startpunt van de speurtocht.</li>
+      </ol>
+      <h3>Route Description:</h3>
+      <ol class="structure-list">
+        <li>Follow this path to the T-junction and turn right.</li>
+        <li>Follow the path to the campsite's "kissing gate".</li>
+        <li>Go through the gate.</li>
+        <li>Turn immediately left onto the paved road.</li>
+        <li>Follow this path to the starting point of the scavenger hunt.</li>
+      </ol>
+    </div>
+  </div>
+}
